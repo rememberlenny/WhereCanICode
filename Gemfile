@@ -7,6 +7,7 @@ gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
 gem 'foundation-will_paginate'
 gem 'ember-rails'
+gem 'ember-source', '1.4.0' # or the version you need
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
