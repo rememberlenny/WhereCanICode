@@ -2,5 +2,4 @@
 
 # Link
 
-(http://wherecanicode.herokuapp.com/)[http://wherecanicode.herokuapp.com/]
-https://github.com/rememberlenny/WhereCanICode
+[http://wherecanicode.herokuapp.com/](http://wherecanicode.herokuapp.com/)
