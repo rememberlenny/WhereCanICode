@@ -6,7 +6,6 @@ class CreateSpaces < ActiveRecord::Migration
       t.date :published_at
       t.text :intro
       t.text :extended
-
       t.timestamps
     end
   end

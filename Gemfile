@@ -6,8 +6,7 @@ gem 'bcrypt-ruby', '3.1.2'
 gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
 gem 'foundation-will_paginate'
-gem 'ember-rails'
-gem 'ember-source', '1.4.0' # or the version you need
+gem 'ember-appkit-rails'
 gem 'geocoder'
 
 group :development, :test do
@@ -43,9 +42,6 @@ gem 'sass-rails', '4.0.1'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails'
-gem 'turbolinks', '1.1.1'
-gem 'jbuilder', '1.0.2'
-
 group :doc do
   gem 'sdoc', '0.3.20', require: false
 end

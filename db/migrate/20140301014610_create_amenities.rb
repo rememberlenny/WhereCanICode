@@ -1,7 +1,6 @@
 class CreateAmenities < ActiveRecord::Migration
   def change
     create_table :amenities do |t|
-      t.integer :space_id
       t.integer :wifi
       t.string :power
       t.belongs_to :space

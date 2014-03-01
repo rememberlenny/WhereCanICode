@@ -1,0 +1,19 @@
+<div>
+  <label for="">Space</label>
+  {{input value=spaceId}}
+</div>
+<div>
+  <label for="">Address</label>
+  {{input value=address}}
+</div>
+<div>
+  <label for="">Longitude</label>
+  {{input value=longitude}}
+</div>
+<div>
+  <label for="">Latitude</label>
+  {{input value=latitude}}
+</div>
+
+<button type="submit" {{action save this}}>Save</button>
+<button type="submit" {{action cancel this}}>Cancel</button>

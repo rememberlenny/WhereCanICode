@@ -1,0 +1,23 @@
+<div>
+  <label for="">Title</label>
+  {{input value=title}}
+</div>
+<div>
+  <label for="">Description</label>
+  {{input value=description}}
+</div>
+<div>
+  <label for="">Published At</label>
+  {{input value=publishedAt}}
+</div>
+<div>
+  <label for="">Intro</label>
+  {{input value=intro}}
+</div>
+<div>
+  <label for="">Extended</label>
+  {{input value=extended}}
+</div>
+
+<button type="submit" {{action save this}}>Save</button>
+<button type="submit" {{action cancel this}}>Cancel</button>

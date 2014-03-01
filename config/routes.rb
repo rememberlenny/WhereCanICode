@@ -1,6 +1,15 @@
 Wcic::Application.routes.draw do
-  resources :spaces
 
+  root to: 'home#index'
+  
+  namespace :api do
+    namespace :v1 do
+      resources :locations, except: [:new, :edit]
+      resources :amenities, except: [:new, :edit]
+      resources :spaces, except: [:new, :edit]
+    end
+  end
+  resources :spaces
   resources :locations
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -57,4 +66,7 @@ Wcic::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  # Uncomment when using 'history' as the location in Ember's router
+  # get '*foo', :to => 'landing#index'
 end

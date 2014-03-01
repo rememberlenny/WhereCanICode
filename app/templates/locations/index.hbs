@@ -1,0 +1,22 @@
+<h3>Index</h3>
+
+<p>{{link-to 'New location' 'locations.new'}}</p>
+
+<table>
+  <tr>
+    <th>id</th>
+    <th>Space</th>
+    <th>Address</th>
+    <th>Longitude</th>
+    <th>Latitude</th>
+  </tr>
+  {{#each}}
+    <tr>
+      <td>{{link-to id 'locations.show' this}}</td>
+      <td>{{space_id}}</td>
+      <td>{{address}}</td>
+      <td>{{longitude}}</td>
+      <td>{{latitude}}</td>
+    </tr>
+  {{/each}}
+</table>

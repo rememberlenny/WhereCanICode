@@ -11,11 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140301001843) do
+ActiveRecord::Schema.define(version: 20140301014624) do
 
   create_table "amenities", force: true do |t|
     t.integer  "wifi"
     t.string   "power"
+    t.integer  "space_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

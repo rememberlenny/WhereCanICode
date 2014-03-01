@@ -1,4 +1,4 @@
 class Space < ActiveRecord::Base
   has_one :location
-  has_one :amenities
+  has_one :amenity
 end
