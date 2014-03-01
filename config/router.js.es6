@@ -5,7 +5,7 @@ var Router = Ember.Router.extend({
   // You will also need to uncomment the greedy route matcher
   // in config/routes.rb
 
-  location: 'history'
+  // location: 'history'
 });
 
 Router.map(function() {

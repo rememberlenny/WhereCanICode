@@ -1,7 +1,5 @@
 Wcic::Application.routes.draw do
 
-  root to: 'home#index'
-  
   namespace :api do
     namespace :v1 do
       resources :locations, except: [:new, :edit]
@@ -9,8 +7,9 @@ Wcic::Application.routes.draw do
       resources :spaces, except: [:new, :edit]
     end
   end
-  resources :spaces
-  resources :locations
+  
+  # resources :spaces
+  # resources :locations
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

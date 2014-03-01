@@ -28,10 +28,10 @@ class SpacesController < ApplicationController
 
     respond_to do |format|
       if @space.save
-        format.html { redirect_to @space, notice: 'Space was successfully created.' }
+        # format.html { redirect_to @space, notice: 'Space was successfully created.' }
         format.json { render action: 'show', status: :created, location: @space }
       else
-        format.html { render action: 'new' }
+        # format.html { render action: 'new' }
         format.json { render json: @space.errors, status: :unprocessable_entity }
       end
     end
@@ -42,10 +42,10 @@ class SpacesController < ApplicationController
   def update
     respond_to do |format|
       if @space.update(space_params)
-        format.html { redirect_to @space, notice: 'Space was successfully updated.' }
+        # format.html { redirect_to @space, notice: 'Space was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
+        # format.html { render action: 'edit' }
         format.json { render json: @space.errors, status: :unprocessable_entity }
       end
     end
@@ -56,7 +56,7 @@ class SpacesController < ApplicationController
   def destroy
     @space.destroy
     respond_to do |format|
-      format.html { redirect_to spaces_url }
+      # format.html { redirect_to spaces_url }
       format.json { head :no_content }
     end
   end
