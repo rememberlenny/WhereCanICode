@@ -1,3 +1,13 @@
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@space.location.latitude}%2C#{@space.location.longitude}" %>
+
+<h3>Nearby locations</h3>
+<ul>
+<% for @space.location in @space.location.nearbys(10) %>
+  <li><%= link_to @space.location.address, @space.location %> (<%= @space.location.distance.round(2) %> miles)</li>
+<% end %>
+</ul>
+
+
 <p id="notice"><%= notice %></p>
 
 <p>

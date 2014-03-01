@@ -8,6 +8,9 @@
       <th>Published at</th>
       <th>Intro</th>
       <th>Extended</th>
+      <th>Address</th>
+      <th>Longitude</th>
+      <th>Latitude</th> 
       <th></th>
       <th></th>
       <th></th>
@@ -22,6 +25,9 @@
         <td><%= space.published_at %></td>
         <td><%= space.intro %></td>
         <td><%= space.extended %></td>
+        <td><%= space.location.address %></td>
+        <td><%= space.location.longitude %></td>
+        <td><%= space.location.latitude %></td>
         <td><%= link_to 'Show', space %></td>
         <td><%= link_to 'Edit', edit_space_path(space) %></td>
         <td><%= link_to 'Destroy', space, method: :delete, data: { confirm: 'Are you sure?' } %></td>
