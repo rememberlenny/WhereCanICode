@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @space.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @space.description %>
+</p>
+
+<p>
+  <strong>Published at:</strong>
+  <%= @space.published_at %>
+</p>
+
+<p>
+  <strong>Intro:</strong>
+  <%= @space.intro %>
+</p>
+
+<p>
+  <strong>Extended:</strong>
+  <%= @space.extended %>
+</p>
+
+<%= link_to 'Edit', edit_space_path(@space) %> |
+<%= link_to 'Back', spaces_path %>
