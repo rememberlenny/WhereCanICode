@@ -1,0 +1,1 @@
+Wherecanicode.ApplicationAdapter = DS.FixtureAdapter;
